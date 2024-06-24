@@ -1,0 +1,177 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+#Encabezado {
+    background-color: rgb(7, 7, 161);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#areas{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#logo, #nombreEmpresa {
+    background-color: white;
+    border: 1px black solid;
+    padding: 1% 3%;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#BarraNavegacion {
+    background-color: rgb(7, 7, 161);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.opcion {
+    padding: 1% 2%;
+    margin: 5px 0;
+}
+
+#Cuerpo {
+    background-color: rgb(7, 7, 161);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1% 3%;
+    padding-bottom: 10%;
+    border-radius: 1%;
+}
+
+#historia, #Aquenosdedicamos {
+    flex: 1 1 100%;
+    margin-top: 3%;
+    padding: 10px;
+}
+
+#imagen {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagen1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#Footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(7, 7, 161);
+    padding: 3%;
+    color: white;
+    justify-content: space-between;
+}
+
+#logofooter1, #logofooter2 {
+    border: 1px black solid;
+    padding: 25px;
+    background-color: white;
+    color: black;
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+
+.textofooter {
+    padding: 25px;
+    color: white;
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+.area {
+    width: 90%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    text-align: left;
+}
+.area img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px;
+}
+
+#tr1{height: 500px;}
+#tr2{height: 500px;}
+#tr3{height: 500px;}
+
+@media (min-width: 768px) {
+    #historia, #Aquenosdedicamos {
+        flex: 1 1 45%;
+    }
+    #imagen {
+        flex: 1 1 45%;
+    }
+    #areas{
+        display: flexbox;
+    }
+    .area {
+        flex: 1 1 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #historia, #imagen, #Aquenosdedicamos {
+        flex: 1 1 30%;
+    }
+    #logofooter1, #logofooter2 {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    .textofooter {
+        flex: 2;
+    }
+    #areas{
+        display: flexbox;
+    }
+    .area {
+        flex: 1 1 22%;
+    }
+}
